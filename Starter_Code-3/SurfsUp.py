@@ -18,8 +18,8 @@ Base = automap_base()
 Base.prepare(autoload_with=engine)
 
 # Save reference to the table
-Measurement = Base.classes.measurement
-Station = Base.classes.station
+Measurement = Base.classes.hawaii_measurements.csv
+Station = Base.classes.hawaii_stations.csv
 
 # Create our session (link) from Python to the DB
 session = Session(engine)
